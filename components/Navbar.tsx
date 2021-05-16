@@ -41,8 +41,6 @@ const Navbar = () => {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    console.log(pathname);
-
     if (pathname === "/projects") setActiveItem(ItemsNameEnum.PROJECTS);
     if (pathname === "/resume") setActiveItem(ItemsNameEnum.RESUME);
     if (pathname === "/") setActiveItem(ItemsNameEnum.ABOUT);

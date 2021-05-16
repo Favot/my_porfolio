@@ -4,8 +4,6 @@ import { services } from "../data";
 import { motion } from "framer-motion";
 import { fadeInUp, routeFade, stagger } from "../animations";
 const About: NextPage = () => {
-  console.log(services);
-
   return (
     <motion.div
       className="flex flex-col flex-grow px-6 pt-1"
