@@ -1,0 +1,36 @@
+.resumeGrid {
+  display: grid;
+  grid-template-areas:
+    "education "
+    "experience"
+    "skill";
+
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px auto;
+  padding-right: 6px;
+}
+
+.itemEducation {
+  grid-area: education;
+}
+
+.itemExperience {
+  grid-area: experience;
+}
+
+.itemSkill {
+  grid-area: skill;
+}
+
+@media only screen and (min-width: 820px) {
+  .resumeGrid {
+    grid-template-areas:
+      "education  experience"
+      "skill  experience";
+
+    grid-template-columns: 1fr 1fr;
+    overflow-y: scroll;
+    height: 68vh;
+  }
+}
