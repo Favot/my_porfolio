@@ -6,6 +6,7 @@ import { fadeInUp, routeFade, stagger } from "../animations";
 import ExperienceCard from "../components/ExperienceCard";
 import EducationCard from "../components/EducationCard";
 
+import Head from "next/head";
 const Resume = () => {
   return (
     <motion.div
@@ -15,6 +16,9 @@ const Resume = () => {
       animate="visible"
       exit="exit"
     >
+      <Head>
+        <title>Corentin Favot | Resume</title>
+      </Head>
       {/* //! Education & Experience */}
       <div className={styles.resumeGrid}>
         <div className={styles.itemEducation}>

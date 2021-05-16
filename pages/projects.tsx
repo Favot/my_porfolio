@@ -6,6 +6,7 @@ import ProjectNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../types";
 
+import Head from "next/head";
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("All");
@@ -35,6 +36,10 @@ const Projects = () => {
       animate="visible"
       exit="exit"
     >
+      {" "}
+      <Head>
+        <title>Corentin Favot | Projects</title>
+      </Head>
       <ProjectNavbar
         handleFilterCategory={handleFilterCategory}
         active={active}

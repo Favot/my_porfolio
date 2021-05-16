@@ -3,6 +3,9 @@ import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 import { motion } from "framer-motion";
 import { fadeInUp, routeFade, stagger } from "../animations";
+
+import Head from "next/head";
+
 const About: NextPage = () => {
   return (
     <motion.div
@@ -12,6 +15,9 @@ const About: NextPage = () => {
       animate="visible"
       exit="exit"
     >
+      <Head>
+        <title>Corentin Favot | Développeur Web</title>
+      </Head>
       <h6 className="my-3 mb-4 text-base font-medium">
         Développeur Web converti, suite à un parcours riche en expériences et
         apprentissages : ma nature curieuse et exploratrice m'a poussé à voyager
