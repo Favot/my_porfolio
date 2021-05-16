@@ -15,7 +15,7 @@ const Sidebar = () => {
         <Image
           width="4rem"
           height="4rem"
-          src="/../public/images/corentin_favot_square.jpg"
+          src="/images/corentin_favot_square.jpg"
           layout="responsive"
           alt="profile picture Corentin Favot"
           quality={10}
