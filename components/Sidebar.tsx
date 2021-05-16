@@ -53,7 +53,7 @@ const Sidebar = () => {
           <span>Nantes, France</span>
         </div>
         <p className="my-2">contact@favot.tech</p>
-        <p className="my-2">+33 (0) 7 80 62 43 54</p>
+        <p className="my-2">+33 (0)7 80 62 43 54</p>
       </div>
       <div className="my-2">
         <button

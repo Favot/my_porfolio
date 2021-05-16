@@ -11,7 +11,7 @@ const ExperienceCard: FunctionComponent<{ experience: ExperiencePro }> = ({
         <p>{date}</p>
       </div>
       <p>
-        <span className="font-bold">{enterprise}</span> ({city} , {country})
+        <span className="font-bold">{enterprise}</span> ({city}, {country})
       </p>
       <p>{enterprise_type}</p>
       <p></p>
