@@ -40,10 +40,10 @@ const Sidebar = () => {
         </a>
       </p>
       <div className="flex justify-around w-9/12 mx-auto my-5 text-blue-500 md:w-full ">
-        <a href="https://www.linkedin.com/in/corentin-favot/">
+        <a href="https://www.linkedin.com/in/corentin-favot/" target="_blank">
           <AiFillLinkedin className="w-8 h-8" />
         </a>
-        <a href="https://github.com/Favot">
+        <a href="https://github.com/Favot" target="_blank">
           <AiFillGithub className="w-8 h-8" />
         </a>
       </div>

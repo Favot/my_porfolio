@@ -1,11 +1,9 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
-import { SiTypescript } from "react-icons/si";
+
 import { Education, ExperiencePro, IProject, Service, Skill } from "./types";
 
-import { BsCircleFill } from "react-icons/bs";
-import { MdDeveloperMode } from "react-icons/md";
 import TypeScriptSvg from "./public/svg/TypeScriptSvg";
 import JavaScriptSvg from "./public/svg/JavaScriptSvg";
 import ReactSvg from "./public/svg/ReactSvg";
@@ -13,11 +11,11 @@ import RailsSvg from "./public/svg/RailsSvg";
 import PostGreScg from "./public/svg/PostGreSvg";
 import CssSvg from "./public/svg/CssSvg";
 import FigmaSvg from "./public/svg/FigmaSvg";
-import FirebaseSVG from "./public/svg/FirebaseSVG";
 import NpmSvg from "./public/svg/NpmSvg";
 import LinuxSvg from "./public/svg/LinuxSvg";
 import PostmanSvg from "./public/svg/PostmanSvg";
 import GitSvg from "./public/svg/GitSvg";
+import TrelloSvg from "./public/svg/TrelloSvg";
 
 export const services: Service[] = [
   {
@@ -44,32 +42,32 @@ export const languages: Skill[] = [
   {
     Icon: TypeScriptSvg,
     name: "TypeScript",
-    url: "45",
+    url: "https://www.typescriptlang.org/",
   },
   {
     Icon: JavaScriptSvg,
     name: "JavaScript",
-    url: "60",
+    url: "https://www.javascript.com/",
   },
   {
     Icon: ReactSvg,
     name: "React",
-    url: "80",
+    url: "https://reactjs.org/",
   },
   {
     Icon: RailsSvg,
     name: "Rails",
-    url: "70",
+    url: "https://rubyonrails.org",
   },
   {
     Icon: PostGreScg,
     name: "PostGre",
-    url: "80",
+    url: "https://www.postgresql.org",
   },
   {
     Icon: CssSvg,
     name: "Css",
-    url: "80",
+    url: "https://www.w3schools.com/css/default.asp",
   },
 ];
 
@@ -77,32 +75,32 @@ export const tools: Skill[] = [
   {
     Icon: FigmaSvg,
     name: "Figma",
-    url: "85",
+    url: "https://www.figma.com",
   },
   {
-    Icon: FirebaseSVG,
-    name: "Firebase",
-    url: "45",
+    Icon: TrelloSvg,
+    name: "Trello",
+    url: "https://trello.com",
   },
   {
     Icon: NpmSvg,
     name: "Npm",
-    url: "60",
+    url: "https://www.npmjs.com",
   },
   {
     Icon: LinuxSvg,
     name: "Linux",
-    url: "45",
+    url: "https://github.com/torvalds/linux",
   },
   {
     Icon: PostmanSvg,
     name: "Postman",
-    url: "45",
+    url: "https://www.postman.com",
   },
   {
     Icon: GitSvg,
     name: "Git",
-    url: "45",
+    url: "https://git-scm.com",
   },
 ];
 

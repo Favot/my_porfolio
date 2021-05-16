@@ -8,7 +8,7 @@ const SkillCar: FunctionComponent<{ value: Skill }> = ({
 }) => {
   return (
     <div className="w-16 h-16 m-6 ">
-      <a href={url}>
+      <a href={url} target="_blank">
         <Icon />
       </a>
     </div>
