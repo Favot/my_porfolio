@@ -16,6 +16,8 @@ import FigmaSvg from "./public/svg/FigmaSvg";
 import FirebaseSVG from "./public/svg/FirebaseSVG";
 import NpmSvg from "./public/svg/NpmSvg";
 import LinuxSvg from "./public/svg/LinuxSvg";
+import PostmanSvg from "./public/svg/PostmanSvg";
+import GitSvg from "./public/svg/GitSvg";
 
 export const services: Service[] = [
   {
@@ -92,6 +94,16 @@ export const tools: Skill[] = [
     name: "Linux",
     url: "45",
   },
+  {
+    Icon: PostmanSvg,
+    name: "Postman",
+    url: "45",
+  },
+  {
+    Icon: GitSvg,
+    name: "Git",
+    url: "45",
+  },
 ];
 
 export const projects: IProject[] = [
@@ -121,7 +133,7 @@ export const projects: IProject[] = [
     id: 2,
     name: "Muse My Vinyls",
     description:
-      "Creation d'un site de location de Vinyls sur la base de airBnB ",
+      "Création d'un site de location de Vinyls sur le modèle de airbnb ",
     image_path: "/images/muse_my_vinyls.png",
     deployed_url: "https://muse-my-vinyls.cleverapps.io/",
     github_url: "https://github.com/Favot/muse-my-vinyls",
@@ -134,7 +146,7 @@ export const education: Education[] = [
   {
     id: 0,
     title: "Licence Professionnelle",
-    subtitle: "Concepteur-développeur d'applications web",
+    subtitle: "Concepteur-développeur d'applications Web",
     year: "2021",
     institute: "Le Wagon",
     city: "Nantes",
@@ -175,7 +187,7 @@ export const experience_pro: ExperiencePro[] = [
     title: "Waiter",
     enterprise: "Dragon-I ",
     enterprise_type: " Fine Dinning / Night Club ",
-    date: "Septembre 2019 à  Janvier 2021",
+    date: "Septembre 2019 à Janvier 2020",
     city: "Hong Kong",
     country: "Hong Kong",
   },
@@ -184,7 +196,7 @@ export const experience_pro: ExperiencePro[] = [
     title: "Waiter",
     enterprise: "Ichu ",
     enterprise_type: " Fine Dinning / Cocktail Bar",
-    date: "Juin 2019 à  Septembre 2021",
+    date: "Juin 2019 à Septembre 2019",
     city: "Hong Kong",
     country: "Hong Kong",
   },
@@ -200,7 +212,7 @@ export const experience_pro: ExperiencePro[] = [
   {
     id: 5,
     title: "Electrician",
-    enterprise: "CES Caravan Electricial Solutions (Melbourne, Australia)",
+    enterprise: "CES Caravan Electricial Solutions",
     enterprise_type: "Entreprise d'aménagement électrique pour caravanes",
     date: "Janvier à Novembre 2015",
     city: "Melbourne",
@@ -220,8 +232,8 @@ export const experience_pro: ExperiencePro[] = [
     id: 7,
     title: "Electricien",
     enterprise: "West Modulaire",
-    enterprise_type: "Amenagement d'installation modulaire",
-    date: "Avril à Decembre 2012",
+    enterprise_type: "Aménagement d'installations de modulaires",
+    date: "Avril à Decémbre 2012",
     city: "Puceul",
     country: "France",
   },

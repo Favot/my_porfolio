@@ -19,7 +19,7 @@ const Resume = () => {
       <div className={styles.resumeGrid}>
         <div className={styles.itemEducation}>
           <motion.div variants={fadeInUp} initial="initial" animate="animate">
-            <h5 className="my-3 text-2xl font-bold">Education</h5>
+            <h5 className="my-3 text-2xl font-bold">Formation</h5>
             <div className="">
               {education.map((education) => (
                 <div

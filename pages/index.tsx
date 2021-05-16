@@ -15,21 +15,21 @@ const About: NextPage = () => {
       exit="exit"
     >
       <h6 className="my-3 mb-4 text-base font-medium">
-        Développeur web converti, un parcours riche en expériences et en
-        apprentissages: Ma nature curieuse et exploratoire m'a poussé à voyager
+        Développeur Web converti, suite à un parcours riche en expériences et
+        apprentissages : ma nature curieuse et exploratrice m'a poussé à voyager
         chaque fois que j'en avais la chance. Cela m'a permis de découvrir des
-        modes de vie et des cultures de travail de plusieurs pays (France,
+        modes de vie et des environements de travail de plusieurs pays (France,
         Australie, Nouvelle-Zélande et Hong Kong).
         <h6 className="mt-4 mb-4">
           Ce sont encore ces traits de caractère et la recherche de nouveaux
-          défis qui m'ont poussé à me réorienter vers le métier de développeur
-          web, un environnement en constante évolution, qui correspond
+          défis qui m'ont poussés à me réorienter vers le métier de développeur
+          Web, un environnement en constante évolution qui correspond
           parfaitement à ma personnalité.
         </h6>
-        J'ai commencé par me former moi-même, puis j'ai suivi une formation
-        intensive au sein de l'organisation Le Wagon. A l'issue de cette
-        formation j'ai eu l'opportunité de travailler sur des projets React en
-        freelance.
+        J'ai commencé par me former via des cours en ligne, puis j'ai suivi une
+        formation intensive au sein de l'organisation Le Wagon. A l'issue de
+        cette formation j'ai eu l'opportunité de travailler sur des projets
+        React en freelance.
       </h6>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
