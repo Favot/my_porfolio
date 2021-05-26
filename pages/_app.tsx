@@ -5,6 +5,7 @@ import Sidebar from "../components/Sidebar";
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 import "../styles/globals.css";
+import ToggleMode from "../components/ToggleMode";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (

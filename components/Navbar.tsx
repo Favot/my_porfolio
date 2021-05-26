@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from "react";
 
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ToggleMode from "./ToggleMode";
 
 enum ItemsNameEnum {
   ABOUT = "About",
@@ -17,26 +18,39 @@ const NavItems: FunctionComponent<{
   name: ItemsName;
   route: string;
 }> = ({ activeItem, name, route, setActiveItem }) => {
-  return activeItem !== name ? (
+  return (
     <div>
       <Link href={route}>
-        <a>
-          <span
-            className="hover:text-green"
-            onClick={() => {
-              setActiveItem(name);
-            }}
-          >
-            {name}
-          </span>
-        </a>
+        {activeItem === name ? (
+          <a>
+            <span
+              className="text-xl font-bold border-b-4 border-green text-green"
+              onClick={() => {
+                setActiveItem(name);
+              }}
+            >
+              {name}
+            </span>
+          </a>
+        ) : (
+          <a>
+            <span
+              className="hover:text-green "
+              onClick={() => {
+                setActiveItem(name);
+              }}
+            >
+              {name}
+            </span>
+          </a>
+        )}
       </Link>
     </div>
-  ) : null;
+  );
 };
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState<ItemsName | null>(null);
+  const [activeItem, setActiveItem] = useState<ItemsName>(ItemsNameEnum.ABOUT);
 
   const { pathname } = useRouter();
 
@@ -50,33 +64,29 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between px-5 py-3 my-3 ">
-      <span className="text-xl font-bold border-b-4 text-green border-green md:text-2xl ">
-        {activeItem}
-      </span>
       <div className="flex space-x-5 text-lg ">
-        {activeItem !== null ? (
-          <>
-            <NavItems
-              activeItem={activeItem}
-              setActiveItem={setActiveItem}
-              name={ItemsNameEnum.ABOUT}
-              route="/"
-            />
-            <NavItems
-              activeItem={activeItem}
-              setActiveItem={setActiveItem}
-              name={ItemsNameEnum.PROJECTS}
-              route="/projects"
-            />
-            <NavItems
-              activeItem={activeItem}
-              setActiveItem={setActiveItem}
-              name={ItemsNameEnum.RESUME}
-              route="/resume"
-            />
-          </>
-        ) : null}
+        <>
+          <NavItems
+            activeItem={activeItem}
+            setActiveItem={setActiveItem}
+            name={ItemsNameEnum.ABOUT}
+            route="/"
+          />
+          <NavItems
+            activeItem={activeItem}
+            setActiveItem={setActiveItem}
+            name={ItemsNameEnum.RESUME}
+            route="/resume"
+          />
+          <NavItems
+            activeItem={activeItem}
+            setActiveItem={setActiveItem}
+            name={ItemsNameEnum.PROJECTS}
+            route="/projects"
+          />
+        </>
       </div>
+      <ToggleMode />
     </div>
   );
 };
